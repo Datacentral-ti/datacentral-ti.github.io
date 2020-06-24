@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Welcome to Jekyll! -  Data Central</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <script src="/node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+    <script src='main.js'></script>
+</head>
+<body>
+    <nav class="navbar is-primary" >
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                Data Central TI
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item ">Home</a>
+                
+                
+                    
+                    <a href="/servicos/" class="navbar-item ">Serviços</a>
+                    
+                
+                    
+                    <a href="/blog/" class="navbar-item ">Blog</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="/#" class="navbar-link ">Links Uteis</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/tabelas-protheus/" class="navbar-item ">Tabelas Protheus</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+    <!-- <section class="hero  is-medium  is-bold is-primary">
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2">Products</h1>
+            <p class="subtitle is-3">Check out our range of products</p>
+            
+        </div>
+    </div>
+</section> -->
+<section class="hero is-medium has-carousel">
+    <div id="carousel-demo" class="hero-carousel">
+        <div class="item-1" style="height:100%; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://unsplash.it/1200/900?random') no-repeat center center fixed">
+            <!-- Slide Content -->
+            <!-- <img src="https://unsplash.it/1200/900?random"> -->
+        </div>
+        <div class="item-2" style="height:100%; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://unsplash.it/1200/900?random') no-repeat center center fixed">
+            <!-- Slide Content -->
+        </div>
+        <div class="item-3" style="height:100%; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://unsplash.it/1200/900?random') no-repeat center center fixed">
+            <!-- Slide Content -->
+        </div>
+    </div>
+    <div class="hero-head"></div>
+    <div class="hero-body"></div>
+    <div class="hero-foot"></div>
+</section>
+<script>
+    
+    window.onload = () => {
+        bulmaCarousel.attach('#carousel-demo', {
+            slidesToScroll: 1,
+            slidesToShow: 1
+        });
+    }
+
+</script>
+
+    <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Welcome to Jekyll!</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-06-15T02:32:19+00:00" itemprop="datePublished">Jun 15, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+
+  </div><a class="u-url" href="/jekyll/update/2020/06/15/welcome-to-jekyll.html" hidden></a>
+</article>
+
+
+    <footer class="footer">
+    <div class="container">
+
+        <div class="columns is-multiline">
+
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/bulma-clean-theme/" class="link">Home</a>
+                </div>
+            </div>
+
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/bulma-clean-theme/blog/" class="link">Blog</a>
+                </div>
+            </div>
+
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/bulma-clean-theme/products/" class="link">Products</a>
+                </div>
+            </div>
+
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/bulma-clean-theme/privacy-policy/" class="link">Privacy
+                        Policy</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content is-small has-text-centered">
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S.
+                    Rhymes</a></p>
+        </div>
+    </div>		
+</footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170621514-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170621514-1');
+</script>
+
+</body>
+</html>

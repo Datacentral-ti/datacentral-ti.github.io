@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> -  Data Central</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <script src="/node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+    <script src='main.js'></script>
+</head>
+<body>
+    <nav class="navbar is-primary" >
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                Data Central TI
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item ">Home</a>
+                
+                
+                    
+                    <a href="/servicos/" class="navbar-item ">Serviços</a>
+                    
+                
+                    
+                    <a href="/blog/" class="navbar-item ">Blog</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="/#" class="navbar-link ">Links Uteis</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/tabelas-protheus/" class="navbar-item ">Tabelas Protheus</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+    <!-- <section class="hero  is-medium  is-bold is-primary">
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2">Products</h1>
+            <p class="subtitle is-3">Check out our range of products</p>
+            
+        </div>
+    </div>
+</section> -->
+<section class="hero is-medium has-carousel">
+    <div id="carousel-demo" class="hero-carousel">
+        <div class="item-1" style="height:100%; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://unsplash.it/1200/900?random') no-repeat center center fixed">
+            <!-- Slide Content -->
+            <!-- <img src="https://unsplash.it/1200/900?random"> -->
+        </div>
+        <div class="item-2" style="height:100%; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://unsplash.it/1200/900?random') no-repeat center center fixed">
+            <!-- Slide Content -->
+        </div>
+        <div class="item-3" style="height:100%; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://unsplash.it/1200/900?random') no-repeat center center fixed">
+            <!-- Slide Content -->
+        </div>
+    </div>
+    <div class="hero-head"></div>
+    <div class="hero-body"></div>
+    <div class="hero-foot"></div>
+</section>
+<script>
+    
+    window.onload = () => {
+        bulmaCarousel.attach('#carousel-demo', {
+            slidesToScroll: 1,
+            slidesToShow: 1
+        });
+    }
+
+</script>
+
+    <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+
+
+    <footer class="footer">
+    <div class="container">
+
+        <div class="columns is-multiline">
+
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/bulma-clean-theme/" class="link">Home</a>
+                </div>
+            </div>
+
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/bulma-clean-theme/blog/" class="link">Blog</a>
+                </div>
+            </div>
+
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/bulma-clean-theme/products/" class="link">Products</a>
+                </div>
+            </div>
+
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/bulma-clean-theme/privacy-policy/" class="link">Privacy
+                        Policy</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content is-small has-text-centered">
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S.
+                    Rhymes</a></p>
+        </div>
+    </div>		
+</footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170621514-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170621514-1');
+</script>
+
+</body>
+</html>
