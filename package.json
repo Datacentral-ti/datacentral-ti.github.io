@@ -1,0 +1,26 @@
+{
+  "name": "datacentral-ti.github.io",
+  "version": "1.0.0",
+  "description": "data central ti website",
+  "main": "index.js",
+  "dependencies": {
+    "bulma-carousel": "^4.0.4",
+    "install": "^0.13.0",
+    "bulma": "^0.9.0",
+    "npm": "^6.14.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Datacentral-ti/datacentral-ti.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Datacentral-ti/datacentral-ti.github.io/issues"
+  },
+  "homepage": "https://github.com/Datacentral-ti/datacentral-ti.github.io#readme"
+}
