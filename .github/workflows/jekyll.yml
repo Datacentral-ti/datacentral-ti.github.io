@@ -2,15 +2,20 @@ name: Jekyll site CI
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches:
+      - source
     
 jobs:
   github-pages:
     runs-on: ubuntu-16.04
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
       - run: npm install
