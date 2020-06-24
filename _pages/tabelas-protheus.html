@@ -45,7 +45,7 @@ permalink: /tabelas-protheus/
 		if (searching)
 			clearTimeout(searching);
 		
-		if (lastSearch === document.querySelector('#txt_nome_tabela').value)
+		if (lastSearch === document.querySelector('#txt_nome_tabela').value.toUpperCase())
 			return;
 		
 		searching = setTimeout(async () => {
@@ -55,13 +55,12 @@ permalink: /tabelas-protheus/
 				loading = false;
 			}
 
-			const tabela = document.querySelector('#txt_nome_tabela').value;
+			const tabela = document.querySelector('#txt_nome_tabela').value.toUpperCase();
 			lastSearch = tabela;
 
 			const tbl = jsonData.find(el => el.x2_chave === tabela);
 			
 			drawTable(tbl);
-			
 		}, 250);
     }
 
@@ -86,7 +85,6 @@ permalink: /tabelas-protheus/
 	load = () => {};
 	if (window.onload) {
 		load = window.onload;
-		console.log(load);
 	}
 	
 	window.onload = async () => {
