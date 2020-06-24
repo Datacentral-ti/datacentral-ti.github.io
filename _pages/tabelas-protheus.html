@@ -1,0 +1,101 @@
+---
+layout: default
+title: Tabelas do Protheus
+permalink: /tabelas-protheus.html
+---
+
+<section class="section">
+	<div class="container">
+		<h1>Tabelas Protheus</h1>
+
+		<div>
+			<input class="input is-info" type="text" id="txt_nome_tabela"
+				onkeyup="filtraTabela()" placeholder="Nome da Tabela">
+		</div>
+
+		<div style="height: 550px; overflow: scroll;">
+			<table class="table is-fullwidth">
+				<thead>
+					<th>Campo</th>
+					<th>Tipo</th>
+					<th>Tamanho</th>
+					<th>Decimal</th>
+					<th>Título</th>
+					<th>Descição</th>
+					<th>Picture</th>
+					<th>Valid</th>
+					<th>Obrigatório</th>
+				</thead>
+				<tbody id="data-dest">
+					<tr><td colspan="9">Carregando...</td></tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+
+
+	<script>
+    let jsonData = null;
+	let searching = null;
+    let loading = false;
+	let lastSearch = '';
+
+    function filtraTabela() {
+		if (searching)
+			clearTimeout(searching);
+		
+		if (lastSearch === document.querySelector('#txt_nome_tabela').value)
+			return;
+		
+		searching = setTimeout(async () => {
+			if (!jsonData && !loading) {
+				loading = true;
+				jsonData = await loadJsonData();
+				loading = false;
+			}
+
+			const tabela = document.querySelector('#txt_nome_tabela').value;
+			lastSearch = tabela;
+
+			const tbl = jsonData.find(el => el.x2_chave === tabela);
+			
+			drawTable(tbl);
+			
+		}, 250);
+    }
+
+    async function loadJsonData() {
+        let req = await fetch('/tabelas_protheus.json');
+        return await req.json();
+    }
+	
+	function drawTable(tbl) {
+		const campos = tbl.campos.map(c => `<tr>
+				${Object.keys(c).map(k => {
+				 	if (['x3_arquivo', 'x3_ordem'].indexOf(k) > -1)
+						return ``;
+					else
+						return `<td>${c[k]}</td>`;
+				}).join('')}
+			</tr>`);
+		
+		document.querySelector('#data-dest').innerHTML = campos.join('');
+	}
+
+	load = () => {};
+	if (window.onload) {
+		load = window.onload;
+		console.log(load);
+	}
+	
+	window.onload = async () => {
+		load();
+        loading = true;
+        jsonData = await loadJsonData();
+		document.querySelector('#data-dest').innerHTML = '';
+        loading = false;
+    };
+
+	</script>
+</section>
